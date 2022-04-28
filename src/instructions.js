@@ -82,7 +82,7 @@ export function instructions() {
           rel="noreferrer"
           target="_blank"
         >
-          <img width="20px" src={rfIcon} />
+          <img width="20px" src={rfIcon} alt="ReadingFaithfully.org icon" />
         </a>
         <a
           href="https://github.com/thesunshade/ped-interface"
@@ -90,10 +90,10 @@ export function instructions() {
           rel="noreferrer"
           target="_blank"
         >
-          <img width="20px" src={githubIcon} />
+          <img width="20px" src={githubIcon} alt="GitHub icon" />
         </a>
         <a href="https://sutta.readingfaithfully.org" title="Citation Lookup Tool" rel="noreferrer" target="_blank">
-          <img width="20px" src={citationHelper} />
+          <img width="20px" src={citationHelper} alt="Citation Lookup tool icon" />
         </a>
         <a
           href="https://ped.readingfaithfully.org"
@@ -101,7 +101,7 @@ export function instructions() {
           rel="noreferrer"
           target="_blank"
         >
-          <img width="20px" src={pedIcon} />
+          <img width="20px" src={pedIcon} alt="Lightweight PED lookup icon" />
         </a>
         <a
           href="https://sc.readingfaithfully.org"
@@ -109,7 +109,7 @@ export function instructions() {
           rel="noreferrer"
           target="_blank"
         >
-          <img width="20px" src={scLight} />
+          <img width="20px" src={scLight} alt="SuttaCentral.org Lightweight interface icon" />
         </a>
         <a
           href="https://dppn.readingfaithfully.org"
@@ -117,7 +117,7 @@ export function instructions() {
           rel="noreferrer"
           target="_blank"
         >
-          <img width="20px" src={dppnIcon} />
+          <img width="20px" src={dppnIcon} alt="DPPN search icon" />
         </a>
       </div>
     </div>
