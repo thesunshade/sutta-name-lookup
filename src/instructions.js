@@ -7,7 +7,7 @@ import githubIcon from "./images/GitHub-Mark-64px-purple.png";
 
 export function instructions() {
   return (
-    <div clasName="full-instructions">
+    <div className="full-instructions">
       <h2>Instructions</h2>
       <div className="included-lists">
         <div>

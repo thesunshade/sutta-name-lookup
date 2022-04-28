@@ -10,7 +10,7 @@ function App() {
   let [userInput, setUserInput] = useState("");
   let [searchType, setSearchType] = useState("fuzzy");
   let [language, setLanguage] = useState("pali");
-  faviconTitle(favicon, "Sutta Finder—ReadingFaithfully.org");
+  faviconTitle(favicon, "Sutta Finder: ReadingFaithfully.org");
 
   return (
     <div className="App">

@@ -1,16 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.624347c1.chunk.css",
-    "main.js": "/static/js/main.e3b21662.chunk.js",
-    "main.js.map": "/static/js/main.e3b21662.chunk.js.map",
+    "main.css": "/static/css/main.d549bedd.chunk.css",
+    "main.js": "/static/js/main.6eeedb6f.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.175f6323.js",
-    "runtime-main.js.map": "/static/js/runtime-main.175f6323.js.map",
     "static/js/2.92070d7d.chunk.js": "/static/js/2.92070d7d.chunk.js",
-    "static/js/2.92070d7d.chunk.js.map": "/static/js/2.92070d7d.chunk.js.map",
     "static/js/3.db9970a3.chunk.js": "/static/js/3.db9970a3.chunk.js",
-    "static/js/3.db9970a3.chunk.js.map": "/static/js/3.db9970a3.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.624347c1.chunk.css.map": "/static/css/main.624347c1.chunk.css.map",
     "static/js/2.92070d7d.chunk.js.LICENSE.txt": "/static/js/2.92070d7d.chunk.js.LICENSE.txt",
     "static/media/GitHub-Mark-64px-purple.d8597351.png": "/static/media/GitHub-Mark-64px-purple.d8597351.png",
     "static/media/favicon-dppn-purple.7ae01233.png": "/static/media/favicon-dppn-purple.7ae01233.png",
@@ -20,7 +15,7 @@
   "entrypoints": [
     "static/js/runtime-main.175f6323.js",
     "static/js/2.92070d7d.chunk.js",
-    "static/css/main.624347c1.chunk.css",
-    "static/js/main.e3b21662.chunk.js"
+    "static/css/main.d549bedd.chunk.css",
+    "static/js/main.6eeedb6f.chunk.js"
   ]
 }
