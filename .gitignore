@@ -9,7 +9,8 @@
 /coverage
 
 # production
-
+.env
+gulpfile.js
 
 # misc
 .vscode
