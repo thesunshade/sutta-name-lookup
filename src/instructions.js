@@ -5,10 +5,37 @@ import scLight from "./images/favicon-sc-light-purple.png";
 import rfIcon from "./images/favicon-rf-purple.png";
 import githubIcon from "./images/GitHub-Mark-64px-purple.png";
 
-export function instructions() {
+export default function Instructions() {
   return (
     <div className="full-instructions">
       <h2>Instructions</h2>
+      Use RegEx for wildcards. For example:
+      <ul className="instructions-list">
+        <li>
+          <span className="code">^dham</span> gives words that <i>start</i> with "dham"
+        </li>
+        <li>
+          <span className="code">^...dhama</span> gives words that <i>start</i> with any three characters followed by
+          "dhama"
+        </li>
+        <li>
+          <span className="code">am$</span> gives words that <i>end</i> with "am"
+        </li>
+        <li>
+          <span className="code">^abhi.*ika$</span> gives words that <i>start</i> with "abhi" and <i>ends</i> with "ika"
+        </li>
+        <li>
+          <span className="code">dh*am</span> gives words that contain <i>either</i> "dham" or "dam"
+        </li>
+        <li>
+          <span className="code">su[pv]a</span> gives words that contain <i>either</i> "supa" or "suva"
+        </li>
+      </ul>
+      <p>For best results, disable fuzzy mode when using wildcards.</p>
+      <p>
+        | <a href="https://discourse.suttacentral.net/t/a-mini-interface-for-the-ped/24432">Feedback</a> |{" "}
+        <a href="https://archive.org/search.php?query=pali%20english%20dictionary">PDF on Archive.org</a> |
+      </p>
       <div className="included-lists">
         <div>
           <h3>Pāli names included:</h3>

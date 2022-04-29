@@ -4,19 +4,21 @@ import { useState } from "react";
 import favicon from "./favicon.png";
 import faviconTitle from "./faviconTitle.js";
 import ResultList from "./ResultList.js";
-import { instructions } from "./instructions.js";
+import Instructions from "./Instructions.js";
 
 function App() {
   let [userInput, setUserInput] = useState("");
   let [searchType, setSearchType] = useState("fuzzy");
   let [language, setLanguage] = useState("pali");
+
+  // dynamically sets page favicon and title
   faviconTitle(favicon, "Sutta Finder: ReadingFaithfully.org");
 
   return (
     <div className="App">
       <div id="input-field-container">
         <label id="user-input-label" htmlFor="user-input">
-          Enter sutta name (omitting "sutta")
+          Enter sutta name, omitting “sutta”. Regex is allowed.
         </label>
         <input
           id="user-input"
@@ -26,15 +28,15 @@ function App() {
           onChange={event => setUserInput(event.target.value)}
           placeholder="ex. dhamma"
         />
-        <p className="instructions">Regex is allowed</p>
+        {/* <p className="instructions">Regex is allowed</p> */}
         <div className="radiobuttonarea" value={searchType} onChange={e => setSearchType(e.target.value)}>
           <label>
             <input type="radio" name="search" value="exact" />
-            Exact search
+            Exact
           </label>
           <label>
-            <input type="radio" defaultChecked name="search" value="fuzzy" /> Ignore diacritics, & double/aspirated
-            consonants
+            <input type="radio" defaultChecked name="search" value="fuzzy" /> Ignore diacritics, double/aspirated
+            letters
           </label>
         </div>
         <div
@@ -53,7 +55,7 @@ function App() {
         </div>
       </div>
       <ResultList searchType={searchType} userInput={userInput} language={language} />
-      {instructions()}
+      <Instructions />
     </div>
   );
 }

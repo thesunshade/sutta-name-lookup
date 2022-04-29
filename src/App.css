@@ -1,9 +1,13 @@
 :root {
   --text: #ec98ff;
   --accent: #bf00e9;
-  --disabled: #e46eff57;
+  --disabled: #f4c1ff6b;
   --background: #19031e;
 }
+
+/* * {
+  border: solid white 1px;
+} */
 
 body {
   background-color: var(--background);
@@ -13,7 +17,7 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  max-width: 21rem;
   margin: auto;
   margin-top: 2rem;
   padding: 0.5rem;
@@ -24,24 +28,21 @@ body {
   flex-direction: column;
   font-size: 1.2rem;
 }
-input#user-input {
-  width: 300px;
+
+#user-input {
   font-size: 1.2rem;
   letter-spacing: 1pt;
-}
-
-input#user-input {
   font-size: 1.2rem;
   font-family: sans-serif;
   /* font-weight: bold; */
   padding: 0.4rem;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-left: 0rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
   background-color: var(--accent);
   border: solid 2px var(--background);
   border-radius: 10px;
-  max-width: 17rem;
+  max-width: 25rem;
 }
 input#user-input:focus {
   background-color: var(--background);
@@ -61,10 +62,10 @@ input#user-input:focus {
   margin: 0;
 }
 
-label#user-input-label {
+#user-input-label {
   color: var(--text);
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  /* margin-bottom: 0.1 rem; */
 }
 
 .result-count {
@@ -159,4 +160,20 @@ input[type="radio"] {
 }
 .links-area a:hover {
   top: -3px;
+}
+
+/* INSTRUCTIONS */
+.code {
+  font-family: monospace;
+  color: var(--accent);
+}
+.instructions-list {
+  padding-left: 0.5rem;
+  list-style: none;
+}
+
+.instructions-list li {
+  padding-left: 22px;
+  text-indent: -22px;
+  margin-bottom: 0.3rem;
 }
