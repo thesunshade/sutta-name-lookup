@@ -12,30 +12,29 @@ export default function Instructions() {
       Use RegEx for wildcards. For example:
       <ul className="instructions-list">
         <li>
-          <span className="code">^dham</span> gives words that <i>start</i> with "dham"
+          <span className="code">^dham</span> words <i>starting</i> with “dham”
         </li>
         <li>
-          <span className="code">^...dhama</span> gives words that <i>start</i> with any three characters followed by
-          "dhama"
+          <span className="code">^...dhama</span> words <i>starting</i> with three characters before “dhama”
         </li>
         <li>
-          <span className="code">am$</span> gives words that <i>end</i> with "am"
+          <span className="code">am$</span> words <i>ending</i> with “am”
         </li>
         <li>
-          <span className="code">^abhi.*ika$</span> gives words that <i>start</i> with "abhi" and <i>ends</i> with "ika"
+          <span className="code">^abhi.*ika$</span> words <i>starting</i> with “abhi" and <i>ending</i> with “ika”
         </li>
         <li>
-          <span className="code">dh*am</span> gives words that contain <i>either</i> "dham" or "dam"
+          <span className="code">dh*am</span> words that have <i>either</i> “dham” or “dam”
         </li>
         <li>
-          <span className="code">su[pv]a</span> gives words that contain <i>either</i> "supa" or "suva"
+          <span className="code">su[pv]a</span> words with <i>either</i> “supa” or “suva”
         </li>
       </ul>
       <p>For best results, disable fuzzy mode when using wildcards.</p>
-      <p>
+      {/* <p>
         | <a href="https://discourse.suttacentral.net/t/a-mini-interface-for-the-ped/24432">Feedback</a> |{" "}
         <a href="https://archive.org/search.php?query=pali%20english%20dictionary">PDF on Archive.org</a> |
-      </p>
+      </p> */}
       <div className="included-lists">
         <div>
           <h3>Pāli names included:</h3>

@@ -168,7 +168,7 @@ input[type="radio"] {
   color: var(--accent);
 }
 .instructions-list {
-  padding-left: 0.5rem;
+  padding-left: 0rem;
   list-style: none;
 }
 
