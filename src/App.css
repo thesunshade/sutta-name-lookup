@@ -1,6 +1,7 @@
 :root {
   --text: #ec98ff;
-  --accent: #bf00e9;
+  --accent: #d105ff;
+  --accent-light: #f8dbff;
   --disabled: #f4c1ff6b;
   --background: #19031e;
 }
@@ -165,7 +166,8 @@ input[type="radio"] {
 /* INSTRUCTIONS */
 .code {
   font-family: monospace;
-  color: var(--accent);
+  color: var(--accent-light);
+  font-size: 1rem;
 }
 .instructions-list {
   padding-left: 0rem;
