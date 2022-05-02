@@ -83,10 +83,14 @@ li {
   list-style: none;
 }
 
-#result-list a {
+#result-list a .citation {
   text-decoration: none;
   font-weight: bold;
   color: var(--accent);
+}
+#result-list a {
+  text-decoration: none;
+  color: var(--text);
 }
 
 #result-list a:hover {

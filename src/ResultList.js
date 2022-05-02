@@ -54,9 +54,8 @@ export default function ResultList(props) {
               }) + "/en/sujato"
             }
           >
-            {item[0]}
-          </a>{" "}
-          {item[1]}
+            <span className="citation">{item[0]}</span> {item[1]}
+          </a>
         </li>
       ))}
     </div>
