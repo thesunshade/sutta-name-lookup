@@ -52,7 +52,7 @@ export default function Instructions() {
               <b>AN</b> Aṅguttara Nikāya
             </li>
             <li>
-              <b>Khp</b> Kuddhakapāṭha
+              <b>Khp</b> Khuddakapāṭha
             </li>
             <li>
               <b>Dhp</b> Dhammapada
