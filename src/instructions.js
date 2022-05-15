@@ -3,6 +3,7 @@ import citationHelper from "./images/favicon-citaton-helper-purple.png";
 import pedIcon from "./images/favicon-pts-purple.png";
 import scLight from "./images/favicon-sc-light-purple.png";
 import rfIcon from "./images/favicon-rf-purple.png";
+import drfIcon from "./images/favicon-drf-purple.png";
 import githubIcon from "./images/GitHub-Mark-64px-purple.png";
 
 export default function Instructions() {
@@ -109,6 +110,9 @@ export default function Instructions() {
           target="_blank"
         >
           <img width="20px" src={rfIcon} alt="ReadingFaithfully.org icon" />
+        </a>
+        <a href="http://daily.readingfaithfully.org" title="Daily Sutta" rel="noreferrer" target="_blank">
+          <img width="20px" src={drfIcon} alt="Daily.ReadingFaithfully.org icon" />
         </a>
         <a
           href="https://github.com/thesunshade/ped-interface"
