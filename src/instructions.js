@@ -1,10 +1,11 @@
-import dppnIcon from "./images/favicon-dppn-purple.png";
-import citationHelper from "./images/favicon-citaton-helper-purple.png";
-import pedIcon from "./images/favicon-pts-purple.png";
-import scLight from "./images/favicon-sc-light-purple.png";
-import rfIcon from "./images/favicon-rf-purple.png";
-import drfIcon from "./images/favicon-drf-purple.png";
-import githubIcon from "./images/GitHub-Mark-64px-purple.png";
+import dppnIcon from "./images/favicon-dppn-lightpurple.png";
+import citationHelper from "./images/favicon-citaton-helper-lightpurple.png";
+import pedIcon from "./images/favicon-ped-lightpurple.png";
+import scLight from "./images/favicon-sc-light-lightpurple.png";
+import rfIcon from "./images/favicon-rf-lightpurple.png";
+import drfIcon from "./images/favicon-drf-lightpurple.png";
+import rIcon from "./images/favicon-r-lightpurple.png";
+import githubIcon from "./images/favicon-GitHub-lightpurple.png";
 
 export default function Instructions() {
   return (
@@ -115,7 +116,7 @@ export default function Instructions() {
           <img width="20px" src={drfIcon} alt="Daily.ReadingFaithfully.org icon" />
         </a>
         <a
-          href="https://github.com/thesunshade/ped-interface"
+          href="https://github.com/thesunshade/sutta-name-lookup#readme"
           title="The source code for this site"
           rel="noreferrer"
           target="_blank"
@@ -140,6 +141,14 @@ export default function Instructions() {
           target="_blank"
         >
           <img width="20px" src={scLight} alt="SuttaCentral.org Lightweight interface icon" />
+        </a>
+        <a
+          href="https://r.readingfaithfully.org"
+          title="Get a random sutta from SuttaCentral.net"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img width="20px" src={rIcon} alt="Random Sutta icon" />
         </a>
         <a
           href="https://dppn.readingfaithfully.org"
