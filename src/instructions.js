@@ -115,14 +115,7 @@ export default function Instructions() {
         <a href="http://daily.readingfaithfully.org" title="Daily Sutta" rel="noreferrer" target="_blank">
           <img width="20px" src={drfIcon} alt="Daily.ReadingFaithfully.org icon" />
         </a>
-        <a
-          href="https://github.com/thesunshade/sutta-name-lookup#readme"
-          title="The source code for this site"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img width="20px" src={githubIcon} alt="GitHub icon" />
-        </a>
+
         <a href="https://sutta.readingfaithfully.org" title="Citation Lookup Tool" rel="noreferrer" target="_blank">
           <img width="20px" src={citationHelper} alt="Citation Lookup tool icon" />
         </a>
@@ -157,6 +150,14 @@ export default function Instructions() {
           target="_blank"
         >
           <img width="20px" src={dppnIcon} alt="DPPN search icon" />
+        </a>
+        <a
+          href="https://github.com/thesunshade/sutta-name-lookup#readme"
+          title="The source code for this site"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img width="20px" src={githubIcon} alt="GitHub icon" />
         </a>
       </div>
     </div>
