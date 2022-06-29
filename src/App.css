@@ -113,15 +113,18 @@ input[type="radio"] {
 /*Instructions area*/
 .full-instructions h3 {
   font-size: 1rem;
+  margin-bottom: 0.2rem;
 }
 .included-lists {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-left: 2rem;
 }
 
 .included-lists ul {
   padding-left: 0.8rem;
+  margin: 0px;
 }
 
 .included-lists li {

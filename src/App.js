@@ -50,7 +50,7 @@ function App() {
             Pali
           </label>
           <label>
-            <input type="radio" name="language" value="english" /> English (from Wisdom Publications)
+            <input type="radio" name="language" value="english" /> English
           </label>
         </div>
       </div>

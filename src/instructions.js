@@ -37,9 +37,9 @@ export default function Instructions() {
         | <a href="https://discourse.suttacentral.net/t/a-mini-interface-for-the-ped/24432">Feedback</a> |{" "}
         <a href="https://archive.org/search.php?query=pali%20english%20dictionary">PDF on Archive.org</a> |
       </p> */}
+      <h3>Names included:</h3>
       <div className="included-lists">
         <div>
-          <h3>Pāli names included:</h3>
           <ul>
             <li>
               <b>DN</b> Dīgha Nikāya
@@ -62,6 +62,10 @@ export default function Instructions() {
             <li>
               <b>Ud</b> Udāna
             </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
             <li>
               <b>Iti</b> Itivuttaka
             </li>
@@ -82,23 +86,6 @@ export default function Instructions() {
             </li>
             <li>
               <b>Ja</b> Jātaka
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>English names included:</h3>
-          <ul>
-            <li>
-              <b>DN</b> Dīgha Nikāya
-            </li>
-            <li>
-              <b>MN</b> Majjhima Nikāya
-            </li>
-            <li>
-              <b>SN</b> Saṁyutta Nikāya
-            </li>
-            <li>
-              <b>AN</b> Aṅguttara Nikāya
             </li>
           </ul>
         </div>
