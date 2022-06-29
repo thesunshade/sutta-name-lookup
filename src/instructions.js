@@ -14,22 +14,22 @@ export default function Instructions() {
       Use RegEx for wildcards. For example:
       <ul className="instructions-list">
         <li>
-          <span className="code">^dham</span> words <i>starting</i> with “dham”
+          <span className="code">^dham</span>&nbsp;&nbsp;&nbsp;&nbsp;<i>starts</i> with “dham”
         </li>
         <li>
-          <span className="code">^...dhama</span> words <i>starting</i> with three characters before “dhama”
+          <span className="code">^..dr</span>&nbsp;&nbsp;&nbsp;<i>starts</i> with 2 letters before “dr”
         </li>
         <li>
-          <span className="code">am$</span> words <i>ending</i> with “am”
+          <span className="code">am$</span>&nbsp;&nbsp;&nbsp;&nbsp;<i>ends</i> with “am”
         </li>
         <li>
-          <span className="code">^abhi.*ika$</span> words <i>starting</i> with “abhi" and <i>ending</i> with “ika”
+          <span className="code">^ab.*ka$</span>&nbsp;&nbsp;&nbsp;&nbsp;<i>starts</i> with “ab” <i>ending</i> with “ka”
         </li>
         <li>
-          <span className="code">dh*am</span> words that have <i>either</i> “dham” or “dam”
+          <span className="code">dh*am</span>&nbsp;&nbsp;&nbsp;&nbsp;has <i>either</i> “dham” or “dam”
         </li>
         <li>
-          <span className="code">su[pv]a</span> words with <i>either</i> “supa” or “suva”
+          <span className="code">su[pv]a</span>&nbsp;&nbsp;&nbsp;&nbsp;with <i>either</i> “supa” or “suva”
         </li>
       </ul>
       <p>For best results, disable fuzzy mode when using wildcards.</p>
