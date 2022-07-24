@@ -28,7 +28,7 @@ function App() {
           onChange={event => setUserInput(event.target.value)}
           placeholder="ex. dhamma"
         />
-        {/* <p className="instructions">Regex is allowed</p> */}
+
         <div className="radiobuttonarea" value={searchType} onChange={e => setSearchType(e.target.value)}>
           <label>
             <input type="radio" name="search" value="exact" />

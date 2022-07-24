@@ -107,7 +107,7 @@ input[type="radio"] {
 
 #result-list {
   line-height: 1.6rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 /*Instructions area*/
