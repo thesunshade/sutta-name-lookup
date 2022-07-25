@@ -11,12 +11,33 @@ export default function ResultList(props) {
   console.log(destination);
   let list = [];
   let database;
+  let linkBeginning, linkEnd;
+
+  switch (destination) {
+    case "sc":
+      linkBeginning = "https://suttacentral.net/";
+      linkEnd = "/en/sujato";
+      break;
+    case "citation":
+      linkBeginning = "https://sutta.readingfaithfully.org/?q=";
+      linkEnd = "";
+      break;
+    case "light":
+      linkBeginning = "https://sc.readingfaithfully.org/?";
+      linkEnd = "";
+      break;
+  }
+
+  function makeSlug(citation) {
+    return citation.toLowerCase().replace(" ", "").replace(":", ".");
+  }
 
   if (language === "pali") {
     database = suttas;
   } else if (language === "english") {
     database = suttasEnglish;
   }
+
   if (userInput && userInput.length > 2) {
     if (searchType === "exact") {
       let regex = new RegExp(userInput.replace("sutta", ""), "i");
@@ -34,6 +55,7 @@ export default function ResultList(props) {
       }
     }
   }
+
   return (
     <div id="result-list">
       <div>
@@ -45,12 +67,7 @@ export default function ResultList(props) {
             title="Open link on SuttaCentral.net"
             target="_blank"
             rel="noreferrer"
-            href={
-              createWebsiteLink({
-                site: "SC",
-                ...validateCitation(parseBookName(item[0]), parseNumbers(item[0])),
-              }) + "/en/sujato"
-            }
+            href={`${linkBeginning}${makeSlug(item[0])}${linkEnd}`}
           >
             <span className="citation">{item[0]}</span> {item[1]}
           </a>

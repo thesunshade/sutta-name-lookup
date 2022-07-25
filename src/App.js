@@ -29,7 +29,7 @@ function App() {
           onChange={event => setUserInput(event.target.value)}
           placeholder="ex. dhamma"
         />
-        {/* <div className="radiobuttonarea" onChange={e => setDestination(e.target.value)}>
+        <div className="radiobuttonarea" onChange={e => setDestination(e.target.value)}>
           <div>
             <span className="button-title">Open in:</span>
             <label>
@@ -42,7 +42,7 @@ function App() {
               <input type="radio" name="destination" value="light" /> SC Light
             </label>
           </div>
-        </div> */}
+        </div>
         <div className="radiobuttonarea" value={searchType} onChange={e => setSearchType(e.target.value)}>
           <label>
             <input type="radio" name="search" value="exact" />
