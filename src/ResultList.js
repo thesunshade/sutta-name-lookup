@@ -7,7 +7,8 @@ import { suttas } from "./suttas.js";
 import fuzzy from "./fuzzy.js";
 
 export default function ResultList(props) {
-  const { searchType, userInput, language } = props;
+  const { searchType, userInput, language, destination } = props;
+  console.log(destination);
   let list = [];
   let database;
 
@@ -17,7 +18,6 @@ export default function ResultList(props) {
     database = suttasEnglish;
   }
   if (userInput && userInput.length > 2) {
-    const start = Date.now();
     if (searchType === "exact") {
       let regex = new RegExp(userInput.replace("sutta", ""), "i");
       for (let i = 0; i < database.length; i++) {
@@ -33,8 +33,6 @@ export default function ResultList(props) {
         }
       }
     }
-    const duration = Date.now() - start;
-    console.log(duration);
   }
   return (
     <div id="result-list">

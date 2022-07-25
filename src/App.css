@@ -97,12 +97,18 @@ li {
   text-decoration: underline;
 }
 
-.radiobuttonarea label {
+label,
+.button-title {
   font-size: 0.8rem;
 }
 
 input[type="radio"] {
   accent-color: var(--accent);
+}
+
+.destination-area {
+  display: flex;
+  direction: column;
 }
 
 #result-list {

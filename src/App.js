@@ -10,6 +10,7 @@ function App() {
   let [userInput, setUserInput] = useState("");
   let [searchType, setSearchType] = useState("fuzzy");
   let [language, setLanguage] = useState("pali");
+  let [destination, setDestination] = useState("sc");
 
   // dynamically sets page favicon and title
   faviconTitle(favicon, "Sutta Finder: ReadingFaithfully.org");
@@ -28,7 +29,20 @@ function App() {
           onChange={event => setUserInput(event.target.value)}
           placeholder="ex. dhamma"
         />
-
+        {/* <div className="radiobuttonarea" onChange={e => setDestination(e.target.value)}>
+          <div>
+            <span className="button-title">Open in:</span>
+            <label>
+              <input type="radio" name="destination" value="sc" defaultChecked /> SuttaCentral
+            </label>
+            <label>
+              <input type="radio" name="destination" value="citation" /> Citation Helper
+            </label>
+            <label>
+              <input type="radio" name="destination" value="light" /> SC Light
+            </label>
+          </div>
+        </div> */}
         <div className="radiobuttonarea" value={searchType} onChange={e => setSearchType(e.target.value)}>
           <label>
             <input type="radio" name="search" value="exact" />
@@ -39,6 +53,7 @@ function App() {
             letters
           </label>
         </div>
+
         <div
           id="language-button-area"
           className="radiobuttonarea"
@@ -54,7 +69,7 @@ function App() {
           </label>
         </div>
       </div>
-      <ResultList searchType={searchType} userInput={userInput} language={language} />
+      <ResultList searchType={searchType} userInput={userInput} language={language} destination={destination} />
       <Instructions />
     </div>
   );
