@@ -1,14 +1,9 @@
-import validateCitation from "./validateCitation.js";
-import createWebsiteLink from "./createWebsiteLink.js";
-import parseBookName from "./parseBookName";
-import parseNumbers from "./parseNumbers";
 import { suttasEnglish } from "./suttasEnglish.js";
 import { suttas } from "./suttas.js";
 import fuzzy from "./fuzzy.js";
 
 export default function ResultList(props) {
   const { searchType, userInput, language, destination } = props;
-  console.log(destination);
   let list = [];
   let database;
   let linkBeginning, linkEnd;
@@ -25,6 +20,9 @@ export default function ResultList(props) {
     case "light":
       linkBeginning = "https://sc.readingfaithfully.org/?";
       linkEnd = "";
+      break;
+    default:
+      console.error("problem with destination setting");
       break;
   }
 
