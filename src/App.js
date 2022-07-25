@@ -8,9 +8,9 @@ import Instructions from "./Instructions.js";
 
 function App() {
   let [userInput, setUserInput] = useState("");
-  let [searchType, setSearchType] = useState("fuzzy");
-  let [language, setLanguage] = useState("pali");
-  let [destination, setDestination] = useState("sc");
+  let [searchType, setSearchType] = useState(localStorage.searchType ? localStorage.searchType : "fuzzy");
+  let [language, setLanguage] = useState(localStorage.language ? localStorage.language : "pali");
+  let [destination, setDestination] = useState(localStorage.destination ? localStorage.destination : "sc");
 
   // dynamically sets page favicon and title
   faviconTitle(favicon, "Sutta Finder: ReadingFaithfully.org");
@@ -29,28 +29,59 @@ function App() {
           onChange={event => setUserInput(event.target.value)}
           placeholder="ex. dhamma"
         />
-        <div className="radiobuttonarea" onChange={e => setDestination(e.target.value)}>
+        <div
+          className="radiobuttonarea"
+          onChange={e => {
+            setDestination(e.target.value);
+            localStorage.destination = e.target.value;
+          }}
+        >
           <div>
             <span className="button-title">Open in:</span>
             <label>
-              <input type="radio" name="destination" value="sc" defaultChecked /> SuttaCentral
+              <input
+                type="radio"
+                name="destination"
+                value="sc"
+                defaultChecked={destination === "sc" ? "checked" : ""}
+              />
+              SuttaCentral
             </label>
             <label>
-              <input type="radio" name="destination" value="citation" /> Citation Helper
+              <input
+                type="radio"
+                name="destination"
+                value="citation"
+                defaultChecked={destination === "citation" ? "checked" : ""}
+              />
+              Citation Helper
             </label>
             <label>
-              <input type="radio" name="destination" value="light" /> SC Light
+              <input
+                type="radio"
+                name="destination"
+                value="light"
+                defaultChecked={destination === "light" ? "checked" : ""}
+              />
+              SC Light
             </label>
           </div>
         </div>
-        <div className="radiobuttonarea" value={searchType} onChange={e => setSearchType(e.target.value)}>
+        <div
+          className="radiobuttonarea"
+          value={searchType}
+          onChange={e => {
+            setSearchType(e.target.value);
+            localStorage.searchType = e.target.value;
+          }}
+        >
           <label>
-            <input type="radio" name="search" value="exact" />
+            <input type="radio" name="search" value="exact" defaultChecked={searchType === "exact" ? "checked" : ""} />
             Exact
           </label>
           <label>
-            <input type="radio" defaultChecked name="search" value="fuzzy" /> Ignore diacritics, double/aspirated
-            letters
+            <input type="radio" name="search" value="fuzzy" defaultChecked={searchType === "fuzzy" ? "checked" : ""} />{" "}
+            Ignore diacritics, double/aspirated letters
           </label>
         </div>
 
@@ -58,14 +89,23 @@ function App() {
           id="language-button-area"
           className="radiobuttonarea"
           value={language}
-          onChange={e => setLanguage(e.target.value)}
+          onChange={e => {
+            setLanguage(e.target.value);
+            localStorage.language = e.target.value;
+          }}
         >
           <label>
-            <input type="radio" defaultChecked name="language" value="pali" />
+            <input type="radio" name="language" value="pali" defaultChecked={language === "pali" ? "checked" : ""} />
             Pali
           </label>
           <label>
-            <input type="radio" name="language" value="english" /> English
+            <input
+              type="radio"
+              name="language"
+              value="english"
+              defaultChecked={language === "english" ? "checked" : ""}
+            />{" "}
+            English
           </label>
         </div>
       </div>
