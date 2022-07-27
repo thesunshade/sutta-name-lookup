@@ -18,7 +18,7 @@ export default function ResultList(props) {
       linkEnd = "";
       break;
     case "light":
-      linkBeginning = "https://sc.readingfaithfully.org/?";
+      linkBeginning = "https://sc.readingfaithfully.org/?q=";
       linkEnd = "";
       break;
     default:
