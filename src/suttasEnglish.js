@@ -1699,7 +1699,7 @@ export const suttasEnglish = [
   ["SN 51:12", "Of Great Fruit"],
   ["SN 51:13", "Concentration due to Desire"],
   ["SN 51:14", "Moggallana"],
-  ["SN 51:15", "The Brahmin Ul)l:labha"],
+  ["SN 51:15", "The Brahmin Uṇṇābha"],
   ["SN 51:16", "Ascetics and Brahmins [1]"],
   ["SN 51:17", "Ascetics and Brahmins [2]"],
   ["SN 51:18", "A Bhikkhu"],
