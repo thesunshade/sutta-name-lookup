@@ -4,7 +4,7 @@ import { useState } from "react";
 import favicon from "./favicon.png";
 import faviconTitle from "./faviconTitle.js";
 import ResultList from "./ResultList.js";
-import Instructions from "./Instructions.js";
+import Instructions from "./instructions.js";
 
 function App() {
   let [userInput, setUserInput] = useState("");
