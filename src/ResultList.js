@@ -6,20 +6,23 @@ export default function ResultList(props) {
   const { searchType, userInput, language, destination } = props;
   let list = [];
   let database;
-  let linkBeginning, linkEnd;
+  let linkBeginning, linkEnd, siteName;
 
   switch (destination) {
     case "sc":
       linkBeginning = "https://suttacentral.net/";
       linkEnd = "/en/sujato";
+      siteName = "SuttaCentral.net";
       break;
     case "citation":
       linkBeginning = "https://sutta.readingfaithfully.org/?q=";
       linkEnd = "";
+      siteName = "Citation Helper";
       break;
     case "light":
       linkBeginning = "https://sc.readingfaithfully.org/?q=";
       linkEnd = "";
+      siteName = "SuttaCentral Light";
       break;
     default:
       console.error("problem with destination setting");
@@ -62,7 +65,7 @@ export default function ResultList(props) {
       {list.map((item, index) => (
         <li key={index}>
           <a
-            title="Open link on SuttaCentral.net"
+            title={"Open link on " + siteName}
             target="_blank"
             rel="noreferrer"
             href={`${linkBeginning}${makeSlug(item[0])}${
