@@ -27,7 +27,7 @@ export default function ResultList(props) {
   }
 
   function makeSlug(citation) {
-    return citation.toLowerCase().replace(" ", "").replace(":", ".");
+    return citation.toLowerCase().replace(" ", "");
   }
 
   if (language === "pali") {
@@ -65,7 +65,9 @@ export default function ResultList(props) {
             title="Open link on SuttaCentral.net"
             target="_blank"
             rel="noreferrer"
-            href={`${linkBeginning}${makeSlug(item[0])}${linkEnd}`}
+            href={`${linkBeginning}${makeSlug(item[0])}${
+              /sn/.test(makeSlug(item[0])) && !/:/.test(makeSlug(item[0])) ? "" : linkEnd
+            }`}
           >
             <span className="citation">{item[0]}</span> {item[1]}
           </a>
