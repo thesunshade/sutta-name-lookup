@@ -1,4 +1,4 @@
-export default function faviconTitle(favImg, title) {
+export default function setFaviconAndTitle(favImg, title) {
   let headTitle = document.querySelector("head");
   let setFavicon = document.createElement("link");
   setFavicon.setAttribute("rel", "shortcut icon");

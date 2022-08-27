@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { useState } from "react";
 import favicon from "./favicon.png";
-import faviconTitle from "./faviconTitle.js";
+import setFaviconAndTitle from "./setFaviconAndTitle.js";
 import ResultList from "./ResultList.js";
 import Instructions from "./instructions.js";
 
@@ -12,8 +12,7 @@ function App() {
   let [language, setLanguage] = useState(localStorage.language ? localStorage.language : "pali");
   let [destination, setDestination] = useState(localStorage.destination ? localStorage.destination : "sc");
 
-  // dynamically sets page favicon and title
-  faviconTitle(favicon, "Sutta Finder: ReadingFaithfully.org");
+  setFaviconAndTitle(favicon, "Sutta Finder: ReadingFaithfully.org");
 
   return (
     <div className="App">

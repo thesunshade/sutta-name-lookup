@@ -1,4 +1,4 @@
-export const suttasEnglish = [
+export const allSuttasEnglish = [
   ["DN 1", "The All-embracing Net of Views"],
   ["DN 2", "The Fruits of Recluseship"],
   ["DN 3", "Ambaṭṭha Sutta"],

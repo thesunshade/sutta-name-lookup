@@ -1,5 +1,5 @@
-import { suttasEnglish } from "./suttasEnglish.js";
-import { suttas } from "./suttas.js";
+import { allSuttasEnglish } from "./allSuttasEnglish.js";
+import { allSuttasPali } from "./allSuttasPali.js";
 import fuzzy from "./fuzzy.js";
 
 export default function ResultList(props) {
@@ -34,9 +34,9 @@ export default function ResultList(props) {
   }
 
   if (language === "pali") {
-    database = suttas;
+    database = allSuttasPali;
   } else if (language === "english") {
-    database = suttasEnglish;
+    database = allSuttasEnglish;
   }
 
   if (userInput && userInput.length > 2) {
