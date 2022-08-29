@@ -93,9 +93,10 @@ function App() {
             localStorage.language = e.target.value;
           }}
         >
+          <span className="button-title">Search by</span>
           <label>
             <input type="radio" name="language" value="pali" defaultChecked={language === "pali" ? "checked" : ""} />
-            Pali
+            Pāli Titles
           </label>
           <label>
             <input
@@ -104,7 +105,7 @@ function App() {
               value="english"
               defaultChecked={language === "english" ? "checked" : ""}
             />{" "}
-            English
+            English Titles
           </label>
         </div>
       </div>
