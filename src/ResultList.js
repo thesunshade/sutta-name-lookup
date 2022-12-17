@@ -1,6 +1,7 @@
 import { allSuttasEnglish } from "./allSuttasEnglish.js";
 import { allSuttasPali } from "./allSuttasPali.js";
 import fuzzy from "./fuzzy.js";
+import copyMdIcon from "./images/copy-markdown-lightPurple.png";
 
 export default function ResultList(props) {
   const { searchType, userInput, language, destination } = props;
@@ -74,6 +75,20 @@ export default function ResultList(props) {
           >
             <span className="citation">{item[0]}</span> {item[1]}
           </a>
+          <img
+            alt="copy icon"
+            className="icon copy-icon"
+            height="14"
+            src={copyMdIcon}
+            title="Copy Markdown link to this sutta"
+            onClick={e => {
+              e.preventDefault();
+              const mdText = `[${item[0]} ${item[1]}](${`${linkBeginning}${makeSlug(item[0])}${
+                /sn/.test(makeSlug(item[0])) && !/:/.test(makeSlug(item[0])) ? "" : linkEnd
+              }`})`;
+              navigator.clipboard.writeText(mdText);
+            }}
+          />
         </li>
       ))}
     </div>

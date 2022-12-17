@@ -45,6 +45,7 @@ body {
   border-radius: 10px;
   max-width: 25rem;
 }
+
 input#user-input:focus {
   background-color: var(--background);
   outline: solid 2px var(--accent);
@@ -88,6 +89,7 @@ li {
   font-weight: bold;
   color: var(--accent);
 }
+
 #result-list a {
   text-decoration: none;
   color: var(--text);
@@ -95,6 +97,17 @@ li {
 
 #result-list a:hover {
   text-decoration: underline;
+}
+
+.copy-icon {
+  position: relative;
+  top: .1rem;
+  padding-left: .2rem;
+  visibility: hidden;
+}
+
+li:hover .copy-icon {
+  visibility: inherit;
 }
 
 label,
@@ -121,6 +134,7 @@ input[type="radio"] {
   font-size: 1rem;
   margin-bottom: 0.2rem;
 }
+
 .included-lists {
   display: flex;
   flex-direction: row;
@@ -146,6 +160,7 @@ input[type="radio"] {
   .App {
     width: 400px;
   }
+
   li {
     padding-left: 3rem;
     text-indent: -3rem;
@@ -172,6 +187,7 @@ input[type="radio"] {
   top: 0;
   transition: top ease 0.5s;
 }
+
 .links-area a:hover {
   top: -3px;
 }
@@ -182,6 +198,7 @@ input[type="radio"] {
   color: var(--accent-light);
   font-size: 1rem;
 }
+
 .instructions-list {
   padding-left: 0rem;
   list-style: none;
