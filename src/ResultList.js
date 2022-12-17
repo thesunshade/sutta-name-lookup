@@ -59,9 +59,11 @@ export default function ResultList(props) {
   }
 
   return (
-    <div id="result-list">
+    <div id="result-list" className="result-list">
       <div>
-        <span className="result-count">{userInput.length > 2 ? "results: " + list.length : ""}</span>
+        <span className="result-count">
+          {userInput.length > 2 ? "results: " + list.length : "Enter a search above"}
+        </span>
       </div>
       {list.map((item, index) => (
         <li key={index}>

@@ -1,6 +1,7 @@
 :root {
   --text: #ec98ff;
   --accent: #d105ff;
+  --dark: #33003e;
   --accent-light: #f8dbff;
   --disabled: #f4c1ff6b;
   --background: #19031e;
@@ -84,18 +85,18 @@ li {
   list-style: none;
 }
 
-#result-list a .citation {
+.result-list a .citation {
   text-decoration: none;
   font-weight: bold;
   color: var(--accent);
 }
 
-#result-list a {
+.result-list a {
   text-decoration: none;
   color: var(--text);
 }
 
-#result-list a:hover {
+.result-list a:hover {
   text-decoration: underline;
 }
 
@@ -124,9 +125,13 @@ input[type="radio"] {
   direction: column;
 }
 
-#result-list {
+.result-list {
   line-height: 1.6rem;
   margin-left: 0rem;
+  outline: solid 2px var(--dark);
+  border-radius: 10px;
+  padding: .5rem;
+  margin-top: .5rem
 }
 
 /*Instructions area*/
