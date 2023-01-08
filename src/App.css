@@ -129,6 +129,7 @@ input[type="radio"] {
   line-height: 1.6rem;
   margin-left: 0rem;
   outline: solid 2px var(--dark);
+  background-color: #270030;
   border-radius: 10px;
   padding: .5rem;
   margin-top: .5rem
