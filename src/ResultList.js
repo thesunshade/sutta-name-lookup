@@ -1,5 +1,6 @@
 import { allSuttasEnglish } from "./allSuttasEnglish.js";
 import { allSuttasPali } from "./allSuttasPali.js";
+import { blurbs } from "./data/blurbs.js";
 import fuzzy from "./fuzzy.js";
 import copyMdIcon from "./images/copy-markdown-lightPurple.png";
 
@@ -68,7 +69,7 @@ export default function ResultList(props) {
       {list.map((item, index) => (
         <li key={index}>
           <a
-            title={"Open link on " + siteName}
+            title={`Open on: ${siteName}${blurbs[makeSlug(item[0])] ? "\nSummary: " + blurbs[makeSlug(item[0])] : ""}`}
             target="_blank"
             rel="noreferrer"
             href={`${linkBeginning}${makeSlug(item[0])}${
@@ -82,7 +83,7 @@ export default function ResultList(props) {
             className="icon copy-icon"
             height="14"
             src={copyMdIcon}
-            title="Copy Markdown link to this sutta"
+            title={`Copy Markdown link to ${siteName}`}
             onClick={e => {
               e.preventDefault();
               const mdText = `[${item[0]} ${item[1]}](${`${linkBeginning}${makeSlug(item[0])}${
