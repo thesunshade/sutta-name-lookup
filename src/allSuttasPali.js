@@ -163,7 +163,7 @@ export const allSuttasPali = [
   ["MN 128", "Upakkilesa"],
   ["MN 129", "Bālapaṇḍita"],
   ["MN 130", "Devadūta"],
-  ["MN 131", "Bhaddekaratta "],
+  ["MN 131", "Bhaddekaratta"],
   ["MN 132", "Ānandabhaddekaratta"],
   ["MN 133", "Mahākaccānabhaddekaratta"],
   ["MN 134", "Lomasakaṅgiyabhaddekaratta"],

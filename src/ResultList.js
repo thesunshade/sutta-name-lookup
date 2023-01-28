@@ -35,6 +35,10 @@ export default function ResultList(props) {
     return citation.toLowerCase().replace(" ", "");
   }
 
+  function clean(item) {
+    return item.replace(/[-\s]/g, "");
+  }
+
   if (language === "pali") {
     database = allSuttasPali;
   } else if (language === "english") {
@@ -43,16 +47,16 @@ export default function ResultList(props) {
 
   if (userInput && userInput.length > 2) {
     if (searchType === "exact") {
-      let regex = new RegExp(userInput.replace("sutta", ""), "i");
+      let regex = new RegExp(clean(userInput).replace("sutta", ""), "i");
       for (let i = 0; i < database.length; i++) {
-        if (regex.test(database[i][1])) {
+        if (regex.test(clean(database[i][1]))) {
           list.push(database[i]);
         }
       }
     } else {
-      let strippedUserInput = new RegExp(fuzzy(userInput.replace("sutta", "")), "i");
+      let strippedUserInput = new RegExp(fuzzy(clean(userInput).replace("sutta", "")), "i");
       for (let i = 0; i < database.length; i++) {
-        if (strippedUserInput.test(fuzzy(database[i][1]))) {
+        if (strippedUserInput.test(fuzzy(clean(database[i][1])))) {
           list.push(database[i]);
         }
       }
