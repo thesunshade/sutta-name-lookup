@@ -91,12 +91,7 @@ export default function Instructions() {
         </div>
       </div>
       <div className="links-area">
-        <a
-          href="http://readingfaithfully.org"
-          title="Support for your sutta readng practice"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="http://readingfaithfully.org" title="Support for your sutta reading practice" rel="noreferrer" target="_blank">
           <img width="20px" src={rfIcon} alt="ReadingFaithfully.org icon" />
         </a>
         <a href="http://daily.readingfaithfully.org" title="Daily Sutta" rel="noreferrer" target="_blank">
@@ -106,44 +101,19 @@ export default function Instructions() {
         <a href="https://sutta.readingfaithfully.org" title="Citation Lookup Tool" rel="noreferrer" target="_blank">
           <img width="20px" src={citationHelper} alt="Citation Lookup tool icon" />
         </a>
-        <a
-          href="https://ped.readingfaithfully.org"
-          title="Lightweight interface for the Pali English Dictionary"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="https://ped.readingfaithfully.org" title="Lightweight interface for the Pali English Dictionary" rel="noreferrer" target="_blank">
           <img width="20px" src={pedIcon} alt="Lightweight PED lookup icon" />
         </a>
-        <a
-          href="https://sc.readingfaithfully.org"
-          title="A lightweight interface for SuttaCentral.net"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="https://sc.readingfaithfully.org" title="A lightweight interface for SuttaCentral.net" rel="noreferrer" target="_blank">
           <img width="20px" src={scLight} alt="SuttaCentral.org Lightweight interface icon" />
         </a>
-        <a
-          href="https://r.readingfaithfully.org"
-          title="Get a random sutta from SuttaCentral.net"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="https://r.readingfaithfully.org" title="Get a random sutta from SuttaCentral.net" rel="noreferrer" target="_blank">
           <img width="20px" src={rIcon} alt="Random Sutta icon" />
         </a>
-        <a
-          href="https://dppn.readingfaithfully.org"
-          title="A lightweight interface the Dictionary of Pali Proper Names"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="https://dppn.readingfaithfully.org" title="A lightweight interface the Dictionary of Pali Proper Names" rel="noreferrer" target="_blank">
           <img width="20px" src={dppnIcon} alt="DPPN search icon" />
         </a>
-        <a
-          href="https://github.com/thesunshade/sutta-name-lookup#readme"
-          title="The source code for this site"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="https://github.com/thesunshade/sutta-name-lookup#readme" title="The source code for this site" rel="noreferrer" target="_blank">
           <img width="20px" src={githubIcon} alt="GitHub icon" />
         </a>
       </div>
