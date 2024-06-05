@@ -4470,7 +4470,7 @@ export const allSuttasPali = [
   ["AN 8.51", "Gotamī"],
   ["AN 8.52", "Bhikkhunovādaka [Ovāda]"],
   ["AN 8.53", "Saṅkhitta gotamiyovāda [Saṃkhitta]"],
-  ["AN 8.54", "Byagghapajja [Dīghajāṇu]"],
+  ["AN 8.54", "Byagghapajja [Vyagghapajja, Dīghajāṇu]"],
   ["AN 8.55", "Ujjaya"],
   ["AN 8.56", "Kāmādhivacana [Bhaya]"],
   ["AN 8.57", "Paṭhama Āhuneyyabhikkhu [Paṭhama Āhuneyya]"],
